@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			// "command": "C:/MinGW/bin/g++.exe",
+			"command": "D:/mingw-winlib/mingw64/bin/g++.exe",
+			// "command": "D:/visualStudio/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"-std=c++20",
+				"-static",
+				"${fileDirname}\\${fileBasenameNoExtension}.cpp",
+				"-o",
+				"${fileDirname}\\..\\exec\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:/MinGW/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: D:/mingw-winlib/mingw64/bin/g++.exe"
+		}
+	]
+}
+
+
+// "${fileDirname}\\*.cpp",
