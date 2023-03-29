@@ -123,6 +123,9 @@ int main(){
     c.Insert(1,1,1);
     c.Insert(2,2,2);
     // c.Insert(3,3,3);
+
+
+
     
     c.Insert(3,4,4);
     a.Insert(1,1,1);
