@@ -160,3 +160,39 @@ cython_debug/
 #.idea/
 
 .vscode
+*.o
+
+# Ignore all build folders
+build/
+out/
+release/
+debug/
+
+# Ignore specific file formats that are produced by the build process
+*.o
+*.exe
+*.so
+*.dll
+*.dylib
+*.out
+*.log
+*.tmp
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+!CMakeLists.txt
+
+# Ignore IDE specific files and folders
+.vs/
+.vscode/
+.idea/
+*.swp
+*~
+
+# Miscellaneous files to ignore
+.DS_Store
+Thumbs.db
+Makefile 
