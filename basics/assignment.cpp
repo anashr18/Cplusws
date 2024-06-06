@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int Add(int *a, int *b) ;    //Add two numbers and return the sum
+int Add(int *p, int *q) ;    //Add two numbers and return the sum
 void AddVal(int *a, int *b, int *result); //Add two numbers and return the sum through the third pointer argument
 void Swap(int *a, int *b) ;  //Swap the value of two integers
 void Factorial(int *a, int *result);       //Generate the factorial of a number and return that through the second pointer argument
@@ -23,14 +23,14 @@ int main(){
     cout << "after" << a << '\t' << b << '\n';
     Factorial(&a , &result);
     cout << "factorial" << a << '\t' << result << '\n';
-    int &res = result;
-    AddRef(a, b, res);
+    // int &res = result;
+    AddRef(a, b, result);
     cout << "AddRef" << a << '\t' << b << '\t' << result << '\n';
-    FactorialRef(a, res);
+    FactorialRef(a, result);
     cout << "FactRef" << a << '\t' << '\t' << result << '\n';
-    int &aref = a;
-    int &bref = b;
-    SwapRef(aref, bref);
+    // int &aref = a;
+    // int &bref = b;
+    SwapRef(a, b);
     cout << "SwapRef" << a << '\t'  << b << '\n';
     return 0;
 };
@@ -65,11 +65,11 @@ void Swap(int *a, int *b) {
     *b = temp;
 };
 
-int Add(int *a, int *b) {
-    int result = *a + *b;
+int Add(int *x, int *y) {
+    int result = *x + *y;
     return result; 
 };
 void AddVal(int *a, int *b, int *result){
-    *result = *a +*b;
+    *result = *a + *b;
 };
 
