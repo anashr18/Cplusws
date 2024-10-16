@@ -1,0 +1,6 @@
+[submodule "externalGit/external/repo"]
+	path = externalGit/external/repo
+	url = https://github.com/anashr18/fullstack.git
+[submodule "externalGit/externa"]
+	path = externalGit/externa
+	url = https://github.com/anashr18/fullstack.git
