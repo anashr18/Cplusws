@@ -12,6 +12,18 @@
                 "CMAKE_CXX_COMPILER": "/usr/bin/g++-10",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
+        },
+        {
+            "name": "ExternalGitClangConfig",
+            "displayName": "ExternalGitClangConfig",
+            "description": "Using compilers: C = /usr/bin/clang, CXX = /usr/bin/clang++",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/bin/clang",
+                "CMAKE_CXX_COMPILER": "/usr/bin/clang++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
         }
     ],
     "buildPresets": [
@@ -20,6 +32,12 @@
             "description": "",
             "displayName": "ExternalGitBuildPreset",
             "configurePreset": "ExternalGitConfigPreset"
+        },
+        {
+            "name": "ExternalGitClangBuildPreset",
+            "description": "",
+            "displayName": "ExternalGitClangBuildPreset",
+            "configurePreset": "ExternalGitClangConfig"
         }
     ]
 }

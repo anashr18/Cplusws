@@ -8,7 +8,9 @@ int main()
 {
     print_hello_world();
     std::cout << project_version_major << std::endl;
+    std::cout << project_version_minor << std::endl;
     std::cout << project_name << std::endl;
+    std::cout << "sfdsjfjsdhfdsfsj" << std::endl;
 
     // Initialize the Python interpreter
     Py_Initialize();

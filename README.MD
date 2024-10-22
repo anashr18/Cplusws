@@ -1,3 +1,9 @@
 C++ related experiments ..
 
-## CMAKE through VSCODE
+## CMAKE in VSCODE
+
+
+## Building cmake project with python modules
+
+
+## Using Pybind11
