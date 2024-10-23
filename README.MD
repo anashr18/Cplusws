@@ -7,3 +7,6 @@ C++ related experiments ..
 
 
 ## Using Pybind11
+
+## use git submodule to add external for non-cmake gits.
+## use fetchContent to add external for cmake gits
