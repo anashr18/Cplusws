@@ -13,6 +13,9 @@ set(CMAKE_CXX_COMPILER_LAUNCHER ccache)
 
 set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME Executable)
+# Enable the generation of a Graphviz dependency graph
+# set_property(GLOBAL PROPERTY EXPORT_GRAPHVIZ_FILE "${CMAKE_BINARY_DIR}/graph.dot")
+include(CMakeGraphVizOptions)
 
 option(ENABLE_TESTING "Enable a unit test build." ON)
 
@@ -93,6 +96,5 @@ if(ENABLE_TESTING)
     enable_testing()
     add_subdirectory(tests)
 endif()
-
 
 
