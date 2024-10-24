@@ -196,3 +196,6 @@ cmake_install.cmake
 .DS_Store
 Thumbs.db
 Makefile 
+
+*/docs/html
+*/myenv

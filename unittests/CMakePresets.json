@@ -1,0 +1,33 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "UnitTestConfigPreset",
+            "displayName": "UnitTestConfigPreset",
+            "description": "Using compilers: C = /usr/bin/gcc-10, CXX = /usr/bin/g++-10",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/bin/gcc-10",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++-10",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "UnitTestBuildPreset",
+            "description": "",
+            "displayName": "UnitTestBuildPreset",
+            "configurePreset": "UnitTestConfigPreset"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "UnitTestTestPreset",
+            "description": "",
+            "displayName": "UnitTestTestPreset",
+            "configurePreset": "UnitTestConfigPreset"
+        }
+    ]
+}
