@@ -1,0 +1,41 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binary files
+*.exe
+*.out
+*.app
+
+# Libraries
+*.lib
+*.a
+*.so
+*.dll
+*.dylib
+
+# Debug files
+*.pdb
+*.log
+*.dSYM/
+.vscode/
+
+# Build directories
+build/
+dist/
+
+# IDE settings
+.idea/
+.vscode/
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.DS_Store
+
+# System files
+Thumbs.db
+Desktop.ini
